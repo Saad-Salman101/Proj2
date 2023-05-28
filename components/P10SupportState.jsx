@@ -31,13 +31,13 @@ const validationSchema = Yup.object().shape({
 });
 
 
-const P10Form2 = () => {
+const P10SupportState = () => {
     const dispatch = useDispatch();
     const { c, country,email,fname,sname } = useSelector((state) => state.custom);
     // console.log(country.country);
 
     const subBtn = () => {
-        dispatch({ type: "decrement" });
+        dispatch({ type: "doubledecrement" });
     };
     const addBtn = () => {
         dispatch({ type: "increament" });
@@ -78,7 +78,7 @@ const P10Form2 = () => {
                         <div className="flex items-center justify-center gap-x-2 my-2 md:mt-6">
                             <div className="bg-[#BE9f56] h-[2px] w-[2rem] lg:w-[3rem]"></div>
                             <div className="bg-[#BE9f56] h-[2px] w-[2rem] lg:w-[3rem]"></div>
-                            <div className="bg-black h-[2px] w-[2rem] lg:w-[3rem]"></div>
+                            <div className="bg-[#BE9f56] h-[2px] w-[2rem] lg:w-[3rem]"></div>
                         </div>
                         
                     </div>
@@ -89,8 +89,8 @@ const P10Form2 = () => {
 
             </div>
 
-            <div className="w-full flex justify-center mt-[18vw] md:mt-[1rem]  h-[45rem] ">
-                <div className="relative flex flex-col justify-around items-center font-Lato mt-4 max-w-[40rem] w-full px-6">
+            <div className="w-full flex justify-center mt-[12vw] md:mt-[1rem]  h-[45rem] ">
+                <div className="relative flex flex-col justify-around items-center font-Lato mt-4  w-[60%] px-6">
 
 
 
@@ -104,6 +104,13 @@ const P10Form2 = () => {
                                 
                                 <div className="overflow-x-hidden">
                                 <Form>
+                                    <div className=" w-full flex flex-col items-center justify-center">
+                                <div className="mb-1">
+                                        <div className="text-black uppercase text-[18px] lg:text-[18px] md:text-[18px]  md:tracking-[2px] tracking-[2px] w-[70vw] md:w-[35rem] max-w-[700px]  outline-none bg-transparent   placeholder:text-center text-center   p-3  ">
+                                        SUPPORTING INFORMATION
+                                        </div>
+                                    </div>
+
                                 <div className="my-2">
                                         <div className="text-black  text-[18px] lg:text-[18px] md:text-[18px]  md:tracking-[2px] tracking-[2px] w-[70vw] md:w-[35rem] max-w-[700px]  outline-none bg-transparent   placeholder:text-center text-center   p-3  ">
                                             {email}
@@ -115,36 +122,40 @@ const P10Form2 = () => {
                                             {fname} {'  '} {sname}
                                         </div>
                                     </div>
-
-                                    <div>
-                                        <Field type="number" name="cnic" placeholder="national id number (CNIC)" className=" mb-2 tracking-[2px] md:tracking-[2px] w-[70vw] md:w-[35rem] placeholder:text-black placeholder:font-semibold placeholder:uppercase placeholder:text-[18px] placeholder:md:text-[18px] placeholder:tracking-[2px] placeholder:md:tracking-[2px] max-w-[580px] text-center     bg-transparent border placeholder:text-center border-gray-500/50 rounded-xl p-3 focus:border-[#BE9F56] focus:bg-transparent outline-none" />
-                                        <ErrorMessage name="cnic" />
                                     </div>
-                                    <div>
-                                        <Field type="text" name="address1" placeholder="address 1" className="mb-6 tracking-[2px] md:tracking-[2px] w-[70vw] md:w-[35rem] placeholder:text-black placeholder:font-semibold placeholder:uppercase placeholder:text-[18px] placeholder:md:text-[18px] placeholder:tracking-[2px] placeholder:md:tracking-[2px] max-w-[580px] text-center     bg-transparent border placeholder:text-center border-gray-500/50 rounded-xl p-3 focus:border-[#BE9F56] focus:bg-transparent outline-none" />
-                                        <ErrorMessage name="address1" />
+                                    
+                                    <div className="my-2">
+                                        <div className="text-silver  text-[10px] lg:text-[10px] md:text-[18px]  md:tracking-[2px] tracking-[2px] w-full md:w-full  outline-none bg-transparent   placeholder:text-center text-center   p-3 ">
+                                        YOU CAN PROVIDE ADDITIONAL (SUPPORTING) information to help us better understand YOU AS A PERSON AND your qualifications/suitability for the role/program/INTERNSHIP. please provide us with additional details WHICH YOU BELIEVE WILL SUPPORT YOUR APPLICATION.
+                                        </div>
                                     </div>
 
-                                    <div>
-                                        <Field type="text" name="address2" placeholder="address 2 (apartment, suite, etc.)" className="tracking-[2px] md:tracking-[2px] w-[70vw] md:w-[35rem] placeholder:text-black placeholder:font-semibold placeholder:uppercase placeholder:text-[18px] placeholder:md:text-[18px] placeholder:tracking-[2px] placeholder:md:tracking-[2px] max-w-[580px] text-center     bg-transparent border placeholder:text-center border-gray-500/50 rounded-xl p-3 focus:border-[#BE9F56] focus:bg-transparent outline-none" />
-                                        <ErrorMessage name="address2" />
-                                    </div>
-                                    <div>
-                                        <Field type="name" name="city" placeholder="City" className="mb-6 tracking-[2px] md:tracking-[2px] w-[70vw] md:w-[35rem] placeholder:text-black placeholder:font-semibold placeholder:uppercase placeholder:text-[18px] placeholder:md:text-[18px] placeholder:tracking-[2px] placeholder:md:tracking-[2px] max-w-[580px] text-center     bg-transparent border placeholder:text-center border-gray-500/50 rounded-xl p-3 focus:border-[#BE9F56] focus:bg-transparent outline-none" />
-                                        <ErrorMessage name="city" />
-                                    </div>
-                                    <div>
-                                        <Field type="name" name="state" placeholder="state / region" className="mb-6 tracking-[2px] md:tracking-[2px] w-[70vw] md:w-[35rem] placeholder:text-black placeholder:font-semibold placeholder:uppercase placeholder:text-[18px] placeholder:md:text-[18px] placeholder:tracking-[2px] placeholder:md:tracking-[2px] max-w-[580px] text-center     bg-transparent border placeholder:text-center border-gray-500/50 rounded-xl p-3 focus:border-[#BE9F56] focus:bg-transparent outline-none" />
-                                        <ErrorMessage name="state" />
-                                    </div>
-                                    <div>
-                                        <Field type="number" name="zipcode" placeholder="zip code / post code" className="mb-6 tracking-[2px] md:tracking-[2px] w-[70vw] md:w-[35rem] placeholder:text-black placeholder:font-semibold placeholder:uppercase placeholder:text-[18px] placeholder:md:text-[18px] placeholder:tracking-[2px] placeholder:md:tracking-[2px] max-w-[580px] text-center     bg-transparent border placeholder:text-center border-gray-500/50 rounded-xl p-3 focus:border-[#BE9F56] focus:bg-transparent outline-none" />
-                                        <ErrorMessage name="zipcode" />
-                                    </div>
+                                            <div className="form-group ">
+                                            <Field
+                                                as="textarea"
+                                                id="message"
+                                                name="message"
+                                                className="form-control w-full h-[80%] border border-gray-500/50 placeholder:text-gray-400 rounded-lg"
+                                                rows="16"
+                                                placeholder="Supporting Information"
+                                            />
+                                            <ErrorMessage name="message" component="div" className="error-message" />
+                                            </div>
 
 
-                                    <button type="submit" disabled={isSubmitting} className="absolute right-1/2  md:right-[-100px]  md:bottom-[120px] lg:flex items-center justify-center h-[90px] w-[100px] md:h-[120px] md:w-[120px] bg-black text-white tracking-widest text-[14px] rounded-lg text-center uppercase">
-                                        CONTINUE
+                                            {/* <button   className="flex-col absolute left-[300px]  md:left-[50vw]  md:bottom-[350px] lg:flex items-center justify-center h-[90px] w-[100px] md:h-[120px] md:w-[120px] bg-black text-white tracking-widest text-[14px] rounded-lg text-center uppercase">
+                                           <div className=" text-[#737373] mb-2 text-[10px]"> OPTIONAL</div> ADD SUPPORTING STATEMENT
+                                        </button> */}
+
+                                            <button
+                                            className="absolute right-[40px]  md:right-[-150px]  md:bottom-[220px] lg:flex items-center justify-center h-[110px] w-[110px] md:h-[120px] md:w-[120px] bg-white text-black tracking-widest text-[14px] rounded-lg text-center uppercase border border-black"
+                                            style={{ borderWidth: '1px' }}
+                                            >
+                                            Cancel
+                                            </button>
+
+                                    <button type="submit" disabled={isSubmitting} className="absolute right-[200px]  md:right-[-150px]  md:bottom-[80px] lg:flex items-center justify-center h-[120px] w-[120px] md:h-[120px] md:w-[120px] bg-black text-white tracking-widest text-[14px] rounded-lg text-center uppercase">
+                                        ADD Supporting Statement
                                     </button>
                                 </Form>
                                 </div>
@@ -157,7 +168,7 @@ const P10Form2 = () => {
 
 
 
-            <div className='w-full flex justify-between mt-20  md:mt-10   '>
+            <div className='w-full flex justify-between mt-24  md:mt-1   '>
                 <div className='ml-10  flex-col flex-end'>
                     <div> .</div>
                     <Image src={ZimoTeam} alt='Zimo Career' width={300} height={45} className='mt-12 mb-10' />
@@ -173,4 +184,4 @@ const P10Form2 = () => {
     );
 };
 
-export default P10Form2;
+export default P10SupportState;

@@ -13,9 +13,15 @@ export const customReducer =createReducer(initialState,{
 increament:(state)=>{
     state.c += 1;
 },
+doubleincreament:(state)=>{
+    state.c += 2;
+},
 decrement:(state)=>{
     state.c -=1;
-} ,      
+} ,
+doubledecrement:(state)=>{
+    state.c -=2;
+} ,       
 setcountry:(state,action)=>{
     state.country= action.payload;
 },

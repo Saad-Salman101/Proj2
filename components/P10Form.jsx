@@ -14,7 +14,7 @@ const validationSchema = Yup.object().shape({
         .email('Invalid email')
         .required(<div className="text-red-500 ml-[2rem] md:ml-[12rem] upper
         ">EMAIL IS REQUIRED</div>),
-    email2: Yup.string()
+    confirmemail: Yup.string()
         .email('Invalid email')
         .required(<div className="text-red-500 md:ml-[12rem] upper
     ">EMAIL IS REQUIRED</div>),
@@ -44,6 +44,11 @@ const P10Form = () => {
     const subBtn = () => {
         dispatch({ type: "decrement" });
     };
+    const addBtn = () => {
+        dispatch(
+          { type: "increament", }
+        );
+      };
     const setemail = (myvalue)=>{
         dispatch(
       {    type: "setemail",
@@ -51,14 +56,14 @@ const P10Form = () => {
       });
       };
 
-      const setfirstname = (myvalue)=>{
+      const setfname = (myvalue)=>{
         dispatch(
       {    type: "setfname",
       payload:myvalue
       });
       };
 
-      const setsecname = (myvalue)=>{
+      const setsname = (myvalue)=>{
         dispatch(
       {    type: "setsname",
       payload:myvalue
@@ -67,7 +72,7 @@ const P10Form = () => {
 
     // const [phone, setPhone] = useState("");
     const [selectedOption, setSelectedOption] = useState(null);
-    console.log(selectedOption)
+    // console.log(selectedOption)
 
     // const handlePhoneChange = (event) => {
     //     setPhone(event.target.value);
@@ -86,8 +91,7 @@ const P10Form = () => {
 
 
     const handleChange = (selectedOption) => {
-        setSelectedOption(selectedOption);
-        
+        // console.log(selectedOption)
     };
 
 
@@ -115,11 +119,11 @@ const P10Form = () => {
     };
 
     const handleSubmit = (values, { setSubmitting }) => {
-        console.log( values);
-        addBtn();
+        // console.log(values);
         setemail(values.email);
-        setfirstname(values.firstname);
-        setsecname(values.lastname);
+        setfname(values.firstname);
+        setsname(values.lastname);
+        addBtn();
         setSubmitting(false);
       };
 
@@ -180,8 +184,8 @@ const P10Form = () => {
                                         <ErrorMessage name="email" />
                                     </div>
                                     <div>
-                                        <Field type="email" name="email2" placeholder="Confirm Email address" className="mb-6 tracking-[2px] md:tracking-[2px] w-[70vw] md:w-[35rem] placeholder:text-black placeholder:font-semibold placeholder:uppercase placeholder:text-[18px] placeholder:md:text-[18px] placeholder:tracking-[2px] placeholder:md:tracking-[2px] max-w-[580px] text-center     bg-transparent border placeholder:text-center border-gray-500/50 rounded-xl p-3 focus:border-[#BE9F56] focus:bg-transparent outline-none" />
-                                        <ErrorMessage name="email2" />
+                                        <Field type="email" name="confirmemail" placeholder="Confirm Email address" className="mb-6 tracking-[2px] md:tracking-[2px] w-[70vw] md:w-[35rem] placeholder:text-black placeholder:font-semibold placeholder:uppercase placeholder:text-[18px] placeholder:md:text-[18px] placeholder:tracking-[2px] placeholder:md:tracking-[2px] max-w-[580px] text-center     bg-transparent border placeholder:text-center border-gray-500/50 rounded-xl p-3 focus:border-[#BE9F56] focus:bg-transparent outline-none" />
+                                        <ErrorMessage name="confirmemail" />
                                     </div>
 
                                     <div>

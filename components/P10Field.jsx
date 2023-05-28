@@ -122,7 +122,7 @@ const P10Feild = () => {
       </div>
 
 
-      <div className='w-full flex justify-between mt-[200px] md:mt-10  h-[10vw] '> 
+      <div className='w-full flex justify-between mt-[200px] md:mt-1  h-[10vw] '> 
       <div className='ml-10  flex-col flex-end md:w-[20%] h-auto w-[40%]'>
         <div> .</div>
         <div> .</div>
