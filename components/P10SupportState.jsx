@@ -10,24 +10,9 @@ import * as Yup from 'yup';
 import Select from "react-select";
 
 const validationSchema = Yup.object().shape({
-    cnic: Yup.string()
+    supportingstate: Yup.string()
         .required(<div className="text-red-500 ml-[2rem] md:ml-[12rem] upper
-        ">CNIC IS REQUIRED</div>),
-        address1: Yup.string()
-        .required(<div className="text-red-500 md:ml-[12rem] upper
-    ">ADDRESS 1 IS REQUIRED</div>),
-    address2: Yup.string()
-        .required(<div className="text-red-500 md:ml-[12rem] upper
-        ">ADDRESS 2 IS REQUIRED</div>),
-    city: Yup.string()
-        .required(<div className="text-red-500 md:ml-[12rem] upper
-        ">CITY IS REQUIRED</div>),
-    state: Yup.string()
-        .required(<div className="text-red-500 md:ml-[12rem] upper
-        ">STATE IS REQUIRED</div>),
-    zipcode: Yup.string()
-        .required(<div className="text-red-500 ml-[2rem] md:ml-[12rem] upper
-        ">ZiP-CODE IS REQUIRED</div>),
+        ">SUPPORTING STATEMENT IS REQUIRED</div>),
 });
 
 
@@ -36,20 +21,17 @@ const P10SupportState = () => {
     const { c, country,email,fname,sname } = useSelector((state) => state.custom);
     // console.log(country.country);
 
-    const subBtn = () => {
+    const doublesubBtn = () => {
         dispatch({ type: "doubledecrement" });
     };
-    const addBtn = () => {
+    const subBtn = () => {
         dispatch({ type: "increament" });
     };
 
-
-    // const [phone, setPhone] = useState("");
     const [selectedOption, setSelectedOption] = useState(null);
 
    const handleSubmit = (values, { setSubmitting }) => {
-        // console.log(values);
-        addBtn();
+        subBtn();
         setSubmitting(false);
       };
 
@@ -63,8 +45,7 @@ const P10SupportState = () => {
                     <div className="text-black text-2xl ml-8 mt-6  font-Lato text-[20px] tracking-[2px] cursor-pointer">
                         APPLY
                     </div>
-                    <button onClick={subBtn}>
-                        {" "}
+                    <button onClick={doublesubBtn}>
                         <div className="text-black ml-8 mt-1 font-Lato text-[20px] tracking-[2px] cursor-pointer">
                             <Image src={BackArrow} alt="" height={15} width={20} /> BACK
                         </div>
@@ -96,7 +77,7 @@ const P10SupportState = () => {
 
                     <div className="w-full flex" >
                         <Formik
-                            initialValues={{ cnic: '', confirmemail: '', firstname: '', lastname: '', date: '', phonenumber: '' }}
+                            initialValues={{ supportingstate:'' }}
                             validationSchema={validationSchema}
                             onSubmit={handleSubmit}
                         >
@@ -133,8 +114,8 @@ const P10SupportState = () => {
                                             <div className="form-group ">
                                             <Field
                                                 as="textarea"
-                                                id="message"
-                                                name="message"
+                                                id="supportingstate"
+                                                name="supportingstate"
                                                 className="form-control w-full h-[80%] border border-gray-500/50 placeholder:text-gray-400 rounded-lg"
                                                 rows="16"
                                                 placeholder="Supporting Information"
@@ -147,7 +128,7 @@ const P10SupportState = () => {
                                            <div className=" text-[#737373] mb-2 text-[10px]"> OPTIONAL</div> ADD SUPPORTING STATEMENT
                                         </button> */}
 
-                                            <button
+                                            <button onClick={doublesubBtn}
                                             className="absolute right-[40px]  md:right-[-150px]  md:bottom-[220px] lg:flex items-center justify-center h-[110px] w-[110px] md:h-[120px] md:w-[120px] bg-white text-black tracking-widest text-[14px] rounded-lg text-center uppercase border border-black"
                                             style={{ borderWidth: '1px' }}
                                             >

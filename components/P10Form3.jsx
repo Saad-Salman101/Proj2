@@ -47,7 +47,7 @@ const P10Form3 = () => {
         dispatch({ type: "increament" });
     };
     const doubleaddBtn = () => {
-        dispatch({ type: "increament" });
+        dispatch({ type: "doubleincreament" });
     };
     // console.log(subBtn);
 

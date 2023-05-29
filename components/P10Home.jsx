@@ -7,7 +7,7 @@ import ZimoInternship from '../public/assets/zimo-internship.png'
 import { useSelector,useDispatch } from 'react-redux';
 import BackArrow from '../public/assets/back-arrow.png'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-// import Dropdown from '../public/assets/dropdown-arrow.png'
+import {Element} from 'react-scroll';
 
 const P10Home = ({mycountry}) => {
 
@@ -17,18 +17,6 @@ const P10Home = ({mycountry}) => {
   {country!==null ? console.log(country) : console.log('0123')}
 console.log(mycountry)
 
-// const [initialValues, setInitialValues] = useState({ country: '' });
-// const setfield = ()=>{
-//   dispatch(
-// {    type: "setrole",}
-//   );
-// };
-
-// useEffect(() => {
-//   if (country !== null) {
-//     setInitialValues({ country });
-//   }
-// }, [country]);
 
 const addBtn = ()=>{
   dispatch(
@@ -63,7 +51,9 @@ payload:myvalue
     { value: 'united states', label: 'United States' },
     { value: 'united kingdom', label: 'United Kingdom' },
   ];
+
   return (
+    <Element name="page10" className="section md:mb-0 mb-[24rem] "> 
     <div className='h-[100vh] flex-col justify-between'>
       <div className="w-[20%]  h-[2vw]">
         <div className="text-black text-2xl ml-8 mt-6  font-Lato text-[20px] tracking-[2px] cursor-pointer">
@@ -75,7 +65,7 @@ payload:myvalue
           </div>
       </div>
       <div className='w-full flex justify-center items-center  h-[60%] md:mt-0 mt-[200px]'>
-        <div className="relative flex flex-col justify-around items-center font-Lato border-[1px] rounded-xl  w-[80%]  md:w-[700px] h-[400px] border-3 border-custom-golden">
+        <div className="relative flex flex-col justify-around items-center font-Lato border-[1px] rounded-xl  w-[80%]  md:w-[700px] h-[400px] border-3 border-golden">
           <div className='font-[20px] font-Lato uppercase mt-6 mb-5 tracking-[2px]'>  YOUR APPLICATION </div>
           <Image src={ZimoCareer} alt='Zimo Career' className='mt-10 mb-10'/>
           <Formik
@@ -132,6 +122,7 @@ payload:myvalue
 </div>
       </div>
     </div>
+    </Element>
   );
 };
 

@@ -131,13 +131,13 @@ const P10Form = () => {
         <div className='flex-col justify-between'>
 
             <div className="flex justify-between h-[100px] " >
-                <div className="w-[20%]  h-[2vw]  ">
+                <div className="w-[25%] ">
                     <div className="text-black text-2xl ml-8 mt-6  font-Lato text-[20px] tracking-[2px] cursor-pointer">
                         APPLY
                     </div>
                     <button onClick={subBtn}>
                         {" "}
-                        <div className="text-black ml-8 mt-1 font-Lato text-[20px] tracking-[2px] cursor-pointer">
+                        <div className="text-black ml-8 mt-1 font-Lato text-[20px] tracking-[2px] cursor-pointer flex flx-row">
                             <Image src={BackArrow} alt="" height={15} width={20} /> BACK
                         </div>
                     </button>

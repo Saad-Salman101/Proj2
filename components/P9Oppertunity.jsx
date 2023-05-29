@@ -1,8 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
+import {Element, scroller} from 'react-scroll';
 
 const P9Oppertunity = () => {
+
+  const scrollToSection = (section) => {
+    scroller.scrollTo(section, {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    });
+  };
+
+
   return (
+    <Element name="page9" className="section"> 
     <div>
 
         <section class="min-h-screen flex flex-col justify-center items-center relative bg-black text-white px-4">
@@ -13,9 +25,10 @@ const P9Oppertunity = () => {
                 <p class="text-[#737373] uppercase  text-center tracking-[2px] max-w-[900px] w-[90%] leading-5 md:leading-[40px] xl:leading-[26px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 3xl:text-[14px] text-[12px] pt-0 lg:pt-8">ZIMO is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, colour, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements.</p>
                 <div class="flex flex-col items-center absolute bottom-0 gap-12">
                     <a class="3xl:text-[14px] text-[20px] uppercase tracking-[2px] cursor-pointer hover:text-[#BE9F56] transition-all">Join our team</a>
-                    <a><img class="w-10 cursor-pointer hover:scale-100 animate-bounce hover:animate-ping transition-all py-1 filter invert" src="/assets/DownArrow.png" alt="arrow" />
+                    <a><img className="w-10 cursor-pointer hover:scale-100 animate-bounce hover:animate-ping transition-all py-1 filter invert" src="/assets/DownArrow.png" alt="arrow"  onClick={() => scrollToSection('page10')} />
                         </a></div></section>
     </div>
+    </Element>
   )
 }
 

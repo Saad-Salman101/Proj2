@@ -66,14 +66,14 @@ const P10Feild = () => {
     { value: 'backend laravel & node js', label: 'BACKEND LARAVEL & NODE JS' },
   ];
   return (
-    <div className=' flex-col justify-between '>
-      <div className="w-[20%]  h-[2vw]  ">
+    <div className=' flex-col justify-between md:mb-0 mb-[15rem]'>
+      <div className="w-[25%] ">
         <div className="text-black text-2xl ml-8 mt-6  font-Lato text-[20px] tracking-[2px] cursor-pointer">
           APPLY
         </div>
         <button onClick={subBtn}>
           {" "}
-          <div className="text-black ml-8 mt-1 font-Lato text-[20px] tracking-[2px] cursor-pointer">
+          <div className="text-black ml-8 mt-1 font-Lato text-[20px] tracking-[2px] cursor-pointer  flex flex-row">
             <Image src={BackArrow} alt="" height={15} width={20} /> BACK
           </div>
         </button>
@@ -81,7 +81,7 @@ const P10Feild = () => {
 
 
       <div className='w-full flex justify-center items-center  h-[60%] md:mt-0 mt-[200px]'>
-        <div className="relative flex flex-col justify-around items-center font-Lato border-[1px] rounded-xl  w-[80%]  md:w-[700px] h-[400px] border-3 border-custom-golden">
+        <div className="relative flex flex-col justify-around items-center font-Lato border-[1px] rounded-xl  w-[80%]  md:w-[700px] h-[400px] border-3 border-golden">
           <div className='font-[20px] font-Lato uppercase mt-6 mb-5 tracking-[2px]'> START YOUR APPLICATION </div>
           <Image src={ZimoCareer} alt='Zimo Career' className='mt-10 mb-10' />
           <Formik

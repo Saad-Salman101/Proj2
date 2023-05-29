@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion';
+import {Element, scroller} from 'react-scroll';
 
 const P8Internship = () => {
 
@@ -39,9 +40,19 @@ const P8Internship = () => {
     };
   }, []);
 
+  const scrollToSection = (section) => {
+    scroller.scrollTo(section, {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    });
+  };
+
+
   return (
     <>
-      <div className='w-full h-[100vh] overflow-x-hidden'>
+    <Element name="page8" className="section">
+      <div className='w-full h-[100vh] overflow-x-hidden overflow-y-hidden'>
 
 
         <div className='w-full h-[30%] flex justify-between items-start'>
@@ -58,7 +69,7 @@ const P8Internship = () => {
                 transition={{ duration: 0.5 }}
               />
             </AnimatePresence>  </div>
-          <div className='h-full w-[30%] flex justify-end items-start'><img src='/assets/P1Location.png' alt='' className=' w-[60%] mr-10 mt-4' /> </div>
+          <div className='h-full w-[30%] flex justify-end items-start'></div>
         </div>
 
 
@@ -76,7 +87,7 @@ const P8Internship = () => {
             </AnimatePresence></div>
         
         
-        <div className='w-full h-[30%] flex justify-between items-center '>
+        <div className='w-full h-[30%] flex justify-between items-center mt-6 '>
           <div></div>
           <div className='flex flex-col justify-between items-center h-full'>
             <div>
@@ -92,11 +103,14 @@ const P8Internship = () => {
               />
             </AnimatePresence>
               </div>
-            <div className='flex flex-col justify-end h-full '> <img src='/assets/DownArrow.png' alt='' /></div> </div>
+            <div className='flex flex-col justify-end h-full mb-6 '> 
+            <a><img className="w-10 cursor-pointer hover:scale-100 animate-bounce hover:animate-ping transition-all py-1" src="/assets/DownArrow.png" alt="arrow" onClick={() => scrollToSection('page9')}  /> </a>
+            </div> </div>
           <div></div>
         </div>
 
       </div>
+      </Element>
     </>
   )
 }
