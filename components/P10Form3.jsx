@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import ZimoTeam from "../public/assets/zimo-team.png";
 import ZimoInternship from "../public/assets/zimo-internship.png";
-import BackArrow from "../public/assets/back-arrow.png";
+import BackArrow from "../public/assets/Back.png";
 import ReactCountryFlag from "react-country-flag";
 import { useDispatch, useSelector } from "react-redux";
 import { Formik, Form, Field, ErrorMessage } from 'formik';
@@ -112,7 +112,7 @@ const P10Form3 = () => {
                     <button onClick={subBtn}>
                         {" "}
                         <div className="text-black ml-8 mt-1 font-Lato text-[20px] tracking-[2px] cursor-pointer">
-                            <Image src={BackArrow} alt="" height={15} width={20} /> BACK
+                            <Image src={BackArrow} alt="" width={100} />
                         </div>
                     </button>
 

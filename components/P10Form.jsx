@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import ZimoTeam from "../public/assets/zimo-team.png";
 import ZimoInternship from "../public/assets/zimo-internship.png";
-import BackArrow from "../public/assets/back-arrow.png";
+import BackArrow from "../public/assets/Back.png";
 import ReactCountryFlag from "react-country-flag";
 import { useDispatch, useSelector } from "react-redux";
 import { Formik, Form, Field, ErrorMessage } from 'formik';
@@ -138,7 +138,7 @@ const P10Form = () => {
                     <button onClick={subBtn}>
                         {" "}
                         <div className="text-black ml-8 mt-1 font-Lato text-[20px] tracking-[2px] cursor-pointer flex flx-row">
-                            <Image src={BackArrow} alt="" height={15} width={20} /> BACK
+                            <Image src={BackArrow} alt=""  width={100} />
                         </div>
                     </button>
 
@@ -164,12 +164,12 @@ const P10Form = () => {
 
             </div>
 
-            <div className="w-full flex justify-center mt-[18vw] md:mt-[1rem]  h-[45rem] ">
+            <div className="w-full flex justify-center mt-[2vh] md:mt-[1rem]   ">
                 <div className="relative flex flex-col justify-around items-center font-Lato mt-4 max-w-[40rem] w-full px-6">
 
 
 
-                    <div className="w-full flex" >
+                    <div className="w-full flex " >
                         <Formik
                             initialValues={{ email: '', confirmemail: '', firstname: '', lastname: '', date: '', phonenumber: '' }}
                             validationSchema={validationSchema}
@@ -221,6 +221,7 @@ const P10Form = () => {
                                     </div>
 
                                     <div className="flex items-center justify-center my-2 mr-[10vw] md:ml-2  md:w-[40vw] ">
+                                        <div className=" overflow-y-auto overflow-x-hidden w-[40%]">
                                         <Select
                                             options={options}
                                             defaultValue={defaultOption}
@@ -230,9 +231,12 @@ const P10Form = () => {
                                             onChange={handleChange}
                                             isRequired
                                         />
+                                        </div>
+
                                         <Field type="tel" name="phonenumber" placeholder="Phone number" className="  ml-2 w-[45vw]  tracking-[2px] md:tracking-[2px] placeholder:text-black placeholder:font-semibold placeholder:uppercase placeholder:text-[18px] placeholder:md:text-[18px] placeholder:tracking-[2px] placeholder:md:tracking-[2px] max-w-[580px] text-center     bg-transparent border placeholder:text-center border-gray-500/50 rounded-xl p-3 focus:border-[#BE9F56] focus:bg-transparent outline-none" />
-                                        <ErrorMessage name="phonenumber" />
+                                        
                                     </div>
+                                    <ErrorMessage name="phonenumber" />
 
 
                                     <button type="submit" disabled={isSubmitting} className="absolute right-1/2  md:right-[-100px]  md:bottom-[120px] lg:flex items-center justify-center h-[90px] w-[100px] md:h-[120px] md:w-[120px] bg-black text-white tracking-widest text-[14px] rounded-lg text-center uppercase">
@@ -250,8 +254,7 @@ const P10Form = () => {
 
 
             <div className='w-full flex justify-between mt-20  md:mt-10   '>
-                <div className='ml-10  flex-col flex-end'>
-                    <div> .</div>
+                <div className='ml-10  flex-col '>
                     <Image src={ZimoTeam} alt='Zimo Career' width={300} height={45} className='mt-12 mb-10' />
                 </div>
                 <div className='w-[30%]'>

@@ -6,7 +6,7 @@ import ZimoCareer from '../public/assets/zimo-careers.png';
 import ZimoTeam from '../public/assets/zimo-team.png'
 import ZimoInternship from '../public/assets/zimo-internship.png'
 import { useSelector, useDispatch } from 'react-redux';
-import BackArrow from '../public/assets/back-arrow.png'
+import BackArrow from '../public/assets/Back.png'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 
 
@@ -66,7 +66,7 @@ const P10Feild = () => {
     { value: 'backend laravel & node js', label: 'BACKEND LARAVEL & NODE JS' },
   ];
   return (
-    <div className=' flex-col justify-between md:mb-0 mb-[15rem]'>
+    <div className='h-[100vh] flex-col justify-between md:mb-0 mb-[15rem]'>
       <div className="w-[25%] ">
         <div className="text-black text-2xl ml-8 mt-6  font-Lato text-[20px] tracking-[2px] cursor-pointer">
           APPLY
@@ -74,7 +74,7 @@ const P10Feild = () => {
         <button onClick={subBtn}>
           {" "}
           <div className="text-black ml-8 mt-1 font-Lato text-[20px] tracking-[2px] cursor-pointer  flex flex-row">
-            <Image src={BackArrow} alt="" height={15} width={20} /> BACK
+            <Image src={BackArrow} alt=""  width={100} /> 
           </div>
         </button>
       </div>
@@ -123,18 +123,14 @@ const P10Feild = () => {
 
 
       <div className='w-full flex justify-between mt-[200px] md:mt-1  h-[10vw] '> 
-      <div className='ml-10  flex-col flex-end md:w-[20%] h-auto w-[40%]'>
-        <div> .</div>
-        <div> .</div>
+      <div className='ml-10  flex-col  md:w-[20%] h-auto w-[40%]'>
       <Image src={ZimoTeam} alt='Zimo Career' layout='responsive' className='mt-12 mb-10' />
       </div>
       <div className='w-[20%]'>
         
       </div>
-      <div className='mr-10 mb-5  flex-col flex-end md:w-[10%] h-auto w-[20%]'>
+      <div className='mr-10 mb-5  flex-col md:w-[10%] h-auto w-[20%]'>
   <Image src={ZimoInternship} alt='Zimo Career' layout='responsive' className='mt-2 mb-10' />
-  <div>.</div>
-  <div>.</div>
 </div>
       </div>
     </div>

@@ -55,7 +55,7 @@ payload:myvalue
   return (
     <Element name="page10" className="section md:mb-0 mb-[24rem] "> 
     <div className='h-[100vh] flex-col justify-between'>
-      <div className="w-[20%]  h-[2vw]">
+      <div className="w-[20%]  h-[12vh] ">
         <div className="text-black text-2xl ml-8 mt-6  font-Lato text-[20px] tracking-[2px] cursor-pointer">
           APPLY
         </div>
@@ -106,19 +106,16 @@ payload:myvalue
       </div>
 
 
-      <div className='w-full flex justify-between mt-[200px] md:mt-10  h-[10vw] md:mb-0  mb-52 '> 
-      <div className='ml-10 flex-col md:justify-between justify-start flex-end md:w-[20%] h-full w-[30%] '>
-        <div> .</div>
-        <div> .</div>
-      <Image src={ZimoTeam} alt='Zimo Career' layout='responsive' className='mt-12 mb-10 h-full' />
+      <div className='w-full flex justify-between mt-[200px] md:mt-1  h-[10vw] '> 
+      <div className='ml-10  flex-col flex-end md:w-[20%] h-auto w-[40%]'>
+      <Image src={ZimoTeam} alt='Zimo Career' layout='responsive' className='mt-12 mb-10' />
       </div>
       <div className='w-[20%]'>
         
       </div>
-      <div className='mr-10 mb-5  flex-col flex-end md:w-[10%] h-auto w-[20%]'>
+      <div className='mr-10 mb-5  flex-col md:w-[10%] h-auto w-[20%]'>
   <Image src={ZimoInternship} alt='Zimo Career' layout='responsive' className='mt-2 mb-10' />
-  <div>.</div>
-  <div>.</div>
+
 </div>
       </div>
     </div>
