@@ -42,7 +42,7 @@ const P8Internship = () => {
 
   const scrollToSection = (section) => {
     scroller.scrollTo(section, {
-      duration: 800,
+      duration: 200,
       delay: 0,
       smooth: 'easeInOutQuart'
     });
@@ -66,7 +66,7 @@ const P8Internship = () => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 alt=""
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.05 }}
               />
             </AnimatePresence>  </div>
           <div className='h-full w-[30%] flex justify-end items-start'></div>
@@ -74,7 +74,7 @@ const P8Internship = () => {
 
 
         <div className='w-full h-[40%] flex justify-center items-center'>    
-            <AnimatePresence mode='wait'>
+            {/* <AnimatePresence mode='wait'>
               <motion.img
                 key={currentIndex}
                 src={images2[currentIndex]}
@@ -84,8 +84,12 @@ const P8Internship = () => {
                 alt=""
                 transition={{ duration: 0.5 }}
               />
-            </AnimatePresence></div>
+            </AnimatePresence> */}
+            <img src='/assets/P8Logo.png' alt='' />
+            </div>
         
+
+
         
         <div className='w-full h-[30%] flex justify-between items-center mt-6 '>
           <div></div>
@@ -99,7 +103,7 @@ const P8Internship = () => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 alt=""
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.05 }}
               />
             </AnimatePresence>
               </div>

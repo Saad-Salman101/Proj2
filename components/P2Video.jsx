@@ -5,7 +5,7 @@ import { Element, scroller } from 'react-scroll';
 const P2Video = () => {
   const scrollToSection = (section) => {
     scroller.scrollTo(section, {
-      duration: 800,
+      duration: 100,
       delay: 0,
       smooth: 'easeInOutQuart',
     });

@@ -7,7 +7,7 @@ const P1Zimoteam = () => {
 
     const scrollToSection = (section) => {
         scroller.scrollTo(section, {
-          duration: 800,
+          duration: 100,
           delay: 0,
           smooth: 'easeInOutQuart'
         });
@@ -19,7 +19,7 @@ const P1Zimoteam = () => {
     <div className='h-[100Vh] w-full flex flex-col overflow-x-hidden relative'>
         <div className='w-full h-[30%] flex flex-row justify-end items-start '>
             {/* <img src='/assets/P1Location.png' alt='' className='w-[40%] md:w-[20%] mr-10 mt-4'/> */}
-            <div className='w-[40%] md:w-[20%] mr-2 mt-3' > <ClockComponent /> </div>
+            <div className='w-[40%] md:w-[20%] mr-0 mt-3' > <ClockComponent /> </div>
         </div>
         <img src='/assets/P1BackgroundLogo.png' alt='' className='absolute blur-md left-40 top-1/3' />
         <div className='w-full h-[40%] flex flex-col justify-center items-start ml-10'>

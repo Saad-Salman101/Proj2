@@ -28,10 +28,10 @@ const ClockComponent = () => {
     <div>
 
         {locationData && (
-                    <div className='flex flex-row items-center text-[14px] tracking-[2px]'>
+                    <div className='flex flex-row items-center text-[10px] tracking-[2px]'>
                     <div>
-                  <div className='flex flex-row'><div>{getCurrentTime()} {locationData.city} {locationData.country_name}</div></div>
-                    <div className='flex flex-row text-golden'>{getCurrentDate()}</div>
+                  <div className='flex flex-row uppercase'><div>{getCurrentTime()} {locationData.city} {locationData.country_name}</div></div>
+                    <div className='flex flex-row text-golden uppercase'>{getCurrentDate()}</div>
                     </div>
                         <p>
                           <CountryFlag countryCode={locationData.country_code} svg style={{ width: '3em', height: '2em' }} />

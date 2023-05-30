@@ -6,7 +6,7 @@ const P7GlobalVision = () => {
 
   const scrollToSection = (section) => {
     scroller.scrollTo(section, {
-      duration: 800,
+      duration: 200,
       delay: 0,
       smooth: 'easeInOutQuart'
     });
