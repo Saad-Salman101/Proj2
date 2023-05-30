@@ -26,7 +26,7 @@ const P3Discover = () => {
 
 
         <div className='h-[50%] w-full flex justify-start items-center '>
-           <div className='bg-[url("/assets/P3Background.png")] w-[50%] h-[100%] bg-contain bg-no-repeat mt-32' >
+           <div className='bg-[url("/assets/P3Background.png")] w-[60%] h-[100%] bg-contain bg-no-repeat mt-32' >
             <img src='/assets/P3Discover.png' alt='' className='w-[70%] mt-10 ml-10'/>
              </div>
             
