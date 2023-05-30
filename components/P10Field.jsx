@@ -67,7 +67,7 @@ const P10Feild = () => {
   ];
   return (
     <div className='h-[100vh] flex-col justify-between md:mb-0 mb-[15rem]'>
-      <div className="w-[25%] ">
+      <div className="w-[25%] h-[12vh]">
         <div className="text-black text-2xl ml-8 mt-6  font-Lato text-[20px] tracking-[2px] cursor-pointer">
           APPLY
         </div>

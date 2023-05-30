@@ -221,7 +221,7 @@ const P10Form = () => {
                                     </div>
 
                                     <div className="flex items-center justify-center my-2 mr-[10vw] md:ml-2  md:w-[40vw] ">
-                                        <div className=" overflow-y-auto overflow-x-hidden w-[40%]">
+                                        <div className=" absolute left-5">
                                         <Select
                                             options={options}
                                             defaultValue={defaultOption}
@@ -233,13 +233,13 @@ const P10Form = () => {
                                         />
                                         </div>
 
-                                        <Field type="tel" name="phonenumber" placeholder="Phone number" className="  ml-2 w-[45vw]  tracking-[2px] md:tracking-[2px] placeholder:text-black placeholder:font-semibold placeholder:uppercase placeholder:text-[18px] placeholder:md:text-[18px] placeholder:tracking-[2px] placeholder:md:tracking-[2px] max-w-[580px] text-center     bg-transparent border placeholder:text-center border-gray-500/50 rounded-xl p-3 focus:border-[#BE9F56] focus:bg-transparent outline-none" />
+                                        <Field type="tel" name="phonenumber" placeholder="Phone number" className="  ml-36 w-[30vw]  tracking-[2px] md:tracking-[2px] placeholder:text-black placeholder:font-semibold placeholder:uppercase placeholder:text-[18px] placeholder:md:text-[18px] placeholder:tracking-[2px] placeholder:md:tracking-[2px] max-w-[580px] text-center     bg-transparent border placeholder:text-center border-gray-500/50 rounded-xl p-3 focus:border-[#BE9F56] focus:bg-transparent outline-none" />
                                         
                                     </div>
                                     <ErrorMessage name="phonenumber" />
 
 
-                                    <button type="submit" disabled={isSubmitting} className="absolute right-1/2  md:right-[-100px]  md:bottom-[120px] lg:flex items-center justify-center h-[90px] w-[100px] md:h-[120px] md:w-[120px] bg-black text-white tracking-widest text-[14px] rounded-lg text-center uppercase">
+                                    <button type="submit" disabled={isSubmitting} className="absolute right-1/2  md:right-[-100px]  md:bottom-[5px] lg:flex items-center justify-center h-[90px] w-[100px] md:h-[120px] md:w-[120px] bg-black text-white tracking-widest text-[14px] rounded-lg text-center uppercase">
                                         CONTINUE
                                     </button>
                                 </Form>
