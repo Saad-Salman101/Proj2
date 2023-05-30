@@ -37,8 +37,8 @@ const P7GlobalVision = () => {
         <div class="tracking-[3px] uppercase 3xl:text-[22px] text-[30px] text-white ">GLOBAL vision</div>
         <h4 class="tracking-[2px] 3xl:text-[14px] text-[20px] pt-6 uppercase text-white ">With a remote culture, diversity is naturally in our DNA.</h4>
         <h4 class="tracking-[2px] 3xl:text-[14px] text-[20px] uppercase mt-2 text-white">Based across THE GLOBE, making up over 23 different nationalities.</h4>
-        <div className='w-full flex flex-row items-end justify-center mt-8'>
-        <a><img className="w-10 cursor-pointer hover:scale-100 animate-bounce hover:animate-ping transition-all py-1 filter invert" src="/assets/DownArrow.png" alt="arrow" onClick={() => scrollToSection('page8')} /> </a>
+        <div className='w-full flex flex-row items-end justify-center mt-8 '>
+        <a><img className="w-10 mr-10 cursor-pointer hover:scale-100 animate-bounce hover:animate-ping transition-all py-1 filter invert" src="/assets/DownArrow.png" alt="arrow" onClick={() => scrollToSection('page8')} /> </a>
         </div>
         </div>
     </div>

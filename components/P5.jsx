@@ -18,7 +18,7 @@ const P5 = () => {
             <Element name="page5" className="section">
     <div className='h-[100vh] w-full bg-black relative flex justify-center items-center'>
         <div className='bg-[url("/assets/P5Background.png")  w-full h-full bg-cover bg-no-repeat  flex-col justify-between items-center'>
-                <img src='/assets/P5Background.png' alt='' className='absolute left-24 w-[80%] h-[90%]'/>
+                <img src='/assets/P5Background.png' alt='' className='absolute left-52 w-[70%] h-[90%] top-8'/>
                 <div className='w-full h-[30%]'> </div>
                 <div className='w-full h-[40%] flex justify-center items-center'><img src='/assets/P5Logo.png' alt=''  className='blur-md  w-[70%] md:w-[50%]'/></div>
                 <div className='w-full h-[30%]  flex justify-center items-end'>
