@@ -133,7 +133,8 @@ const Footer = () => {
                 <div className='md:w-[100%] w-full flex flex-col justify-center items-center '>
                 <div className='ml-4 mr-4  w-[80%] md:mt-5 mt-16' >
                     <img src='/assets/P1ZimoTeam.png'alt=''/>
-                    <img src='/assets/FooterLogo.png' alt='' className='  mt-4 ' /> </div>
+                    <img src='/assets/FooterLogo.png' alt='' className='  mt-4 ' /> 
+                    </div>
                 <img src='/assets/FooterSmallLogo.png' alt=''  className='  mt-10 md:mb-0 mb-1 ml-4 w-[20%]' /> 
                 <div className='text-[10px] font-Lato text-center gap-1 tracking-widest leading-5'  >ZIMO{' '} GROUP{' '} LIMITED <br/>
                             71-75{' '} SHELTON{' '} STREET{' '} COVENT{' '} GARDEN{' '} LONDON{' '}  WC2H{' '} 9JQ{' '}
