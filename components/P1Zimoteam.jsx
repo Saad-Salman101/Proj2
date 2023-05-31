@@ -21,7 +21,7 @@ const P1Zimoteam = () => {
             {/* <img src='/assets/P1Location.png' alt='' className='w-[40%] md:w-[20%] mr-10 mt-4'/> */}
             <div className='w-[70%] md:w-[20%] mr-0 mt-3' > <ClockComponent /> </div>
         </div>
-        <img src='/assets/P1BackgroundLogo.png' alt='' className='absolute blur-sm md:blur-md md:left-40 left-20 top-72 md:top-1/3 md:w-[70%] w-[70%]' />
+        <img src='/assets/P1BackgroundLogo.png' alt='' className='absolute blur-sm md:blur-md md:left-40 left-20 top-72 md:top-64 md:top-1/3 md:w-[70%] w-[70%]' />
         <div className='w-full h-[40%] flex flex-col justify-center items-start ml-10'>
             <div>
                 <img src='/assets/P1ZimoTeam.png' alt='' className='md:w-[100%] w-[60%]' />
