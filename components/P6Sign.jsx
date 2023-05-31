@@ -28,10 +28,10 @@ const P6Sign = () => {
 
       <div className='w-full h-[20%] flex flex-col  items-center justify-between   mb-1'>
     
-        <div className='w-full flex-col flex justify-between '>
-          <div></div>
+        <div className='w-full h-full flex-col flex justify-between '>
 
-          <div className='w-full flex  justify-between md:justify-between lg:justify-between items-end  '>
+
+          <div className='w-full h-full flex  justify-between md:justify-between lg:justify-between items-end'>
             <div className='w-[30%]'></div>
             <div className='w-[40%] flex justify-center mt-20'>
             <a><img className="w-10 ml-10 mt-7 cursor-pointer hover:scale-100 animate-bounce hover:animate-ping transition-all py-1 " src="/assets/DownArrow.png" alt="arrow" onClick={() => scrollToSection('page7')} /> </a>
