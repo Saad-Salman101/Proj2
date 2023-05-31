@@ -36,12 +36,12 @@ const P6Sign = () => {
             <div className='w-[40%] flex justify-center mt-20'>
             <a><img className="w-10 ml-10 mt-7 cursor-pointer hover:scale-100 animate-bounce hover:animate-ping transition-all py-1 " src="/assets/DownArrow.png" alt="arrow" onClick={() => scrollToSection('page7')} /> </a>
             </div>
-            <div className='w-[30%] flex flex-col md:mr-10 md:mb-5 items-end' >
+            <div className='w-[30%] flex flex-col md:mr-10 mr-5 md:mb-5 items-end mb-10' >
               <div className='flex md:ml-72 ml-0 justify-end items-end md:w-[40%] w-[80%]  md:mr-20'>
-                <img src='/assets/P6SmallLogo.png' alt='' className='md:w-[20%] h-[10%] w-[10%] '/>
-                <img src='/assets/P6Sign.png' alt='' className='md:ml-10 ml-10 md:w-[100%]  h-[40%] w-[100%]  '/>
+                <img src='/assets/P6SmallLogo.png' alt='' className='md:w-[20%] h-[10%] w-[30%] '/>
+                <img src='/assets/P6Sign.png' alt='' className='md:ml-10 ml-10 md:w-[100%]  h-[40%] w-[150%]  '/>
               </div>
-              <div className='w-[40%] md:w-[75%] flex justify-end '>
+              <div className='w-[130%] md:w-[75%] flex justify-end '>
               <img src='/assets/P6Line.png' alt=''/>
               </div>
               <div className='flex justify-end'>

@@ -22,7 +22,7 @@ const P4AI = () => {
         </div>
 
             <div className='w-full h-[50%] flex justify-center items-center'>
-                <img src='/assets/P4AiLogo.png' alt='' /> 
+                <img src='/assets/P4AiLogo.png' alt='' className='md:w-[40%] w-[80%]' /> 
             </div>
 
             <div className='w-full h-[30%] flex flex-row justify-between items-center'>
@@ -35,7 +35,7 @@ const P4AI = () => {
                         </a>
                 </div>
                 </div>
-                <div className='w-[30%] h-full flex justify-end items-end'> <img src='/assets/P4AiSmallLogo.png' alt='' className='mb-10 mr-6' /></div>
+                <div className='w-[30%] h-full flex justify-end items-end'> <img src='/assets/P4AiSmallLogo.png' alt='' className='mb-10 mr-6 md:w-[40%] w-[70%]' /></div>
             </div>
 
         </div>

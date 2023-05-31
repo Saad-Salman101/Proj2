@@ -83,7 +83,7 @@ const P10Feild = () => {
       <div className='w-full flex justify-center items-center  h-[60%] md:mt-0 mt-[200px]'>
         <div className="relative flex flex-col justify-around items-center font-Lato border-[1px] rounded-xl  w-[80%]  md:w-[700px] h-[400px] border-3 border-golden">
           <div className='font-[20px] font-Lato uppercase mt-6 mb-5 tracking-[2px]'> START YOUR APPLICATION </div>
-          <Image src={ZimoCareer} alt='Zimo Career' className='mt-10 mb-10' />
+          <Image src={ZimoCareer} alt='Zimo Career' className='mt-10 mb-10 md:w-[40%] w-[50%]' />
           <Formik
             initialValues={{ role: role ? role.role : '' }}
             validate={validate}

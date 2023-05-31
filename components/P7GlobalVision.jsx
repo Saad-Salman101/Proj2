@@ -22,8 +22,8 @@ const P7GlobalVision = () => {
         
         <div className='h-[30%] w-full flex flex-row justify-center items-center'>
             <div>
-                <div class="tracking-[2px] text-center 3xl:text-[14px] text-[20px]  uppercase text-white"> WORK ON OUR INNOVATIVE SOFTWARE PRODUCTS.</div>
-                <div class="tracking-[2px] pt-8 3xl:text-[14px] text-[20px]  uppercase pl-5 text-white">DESIGN AND BUILD THE SYSTEMS THAT ARE CHANGING THE WORLD.</div>
+                <div class="tracking-[2px] text-center 3xl:text-[14px] md:text-[20px] text-[12px]  uppercase text-white"> WORK ON OUR INNOVATIVE SOFTWARE PRODUCTS.</div>
+                <div class="tracking-[2px] pt-8 3xl:text-[14px] text-[12px] md:text-[20px] uppercase pl-5 text-white">DESIGN AND BUILD THE SYSTEMS THAT ARE CHANGING THE WORLD.</div>
             </div>
         </div>
         
@@ -34,9 +34,9 @@ const P7GlobalVision = () => {
         
         
         <div className='h-[30%] w-full flex flex-col justify-start items-start ml-10'>
-        <div class="tracking-[3px] uppercase 3xl:text-[22px] text-[30px] text-white ">GLOBAL vision</div>
-        <h4 class="tracking-[2px] 3xl:text-[14px] text-[20px] pt-6 uppercase text-white ">With a remote culture, diversity is naturally in our DNA.</h4>
-        <h4 class="tracking-[2px] 3xl:text-[14px] text-[20px] uppercase mt-2 text-white">Based across THE GLOBE, making up over 23 different nationalities.</h4>
+        <div class="tracking-[3px] uppercase 3xl:text-[22px] md:text-[20px] text-[20px] text-white ">GLOBAL vision</div>
+        <h4 class="tracking-[2px] 3xl:text-[14px] text-[12px] md:text-[20px] pt-6 uppercase text-white ">With a remote culture, diversity is naturally in our DNA.</h4>
+        <h4 class="tracking-[2px] 3xl:text-[14px] text-[12px] md:text-[20px] uppercase mt-2 text-white">Based across THE GLOBE, making up over 23 different nationalities.</h4>
         <div className='w-full flex flex-row items-end justify-center mt-8 '>
         <a><img className="w-10 mr-10 cursor-pointer hover:scale-100 animate-bounce hover:animate-ping transition-all py-1 filter invert" src="/assets/DownArrow.png" alt="arrow" onClick={() => scrollToSection('page8')} /> </a>
         </div>

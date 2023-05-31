@@ -20,14 +20,14 @@ const P3Discover = () => {
 
         <div className='h-[25%] w-full flex flex-row justify-between items-start'>
             <div className='w-[30%]'></div>
-            <div className='w-[40%] flex justify-center items-center'><img src='/assets/P3Team.png' alt='' className='mt-20 w-[50%]'/></div>
+            <div className='w-[40%] flex justify-center items-center'><img src='/assets/P3Team.png' alt='' className='mt-20 md:w-[50%] w-[100%]'/></div>
             <div className='w-[30%]'></div>
         </div>
 
 
         <div className='h-[50%] w-full flex justify-start items-center '>
-           <div className='bg-[url("/assets/P3Background.png")] w-[60%] h-[100%] bg-contain bg-no-repeat mt-32' >
-            <img src='/assets/P3Discover.png' alt='' className='w-[70%] mt-10 ml-10'/>
+           <div className='bg-[url("/assets/P3Background.png")] md:w-[60%] w-[80%] h-[100%] bg-contain bg-no-repeat mt-32' >
+            <img src='/assets/P3Discover.png' alt='' className='md:w-[70%] w-[100%] mt-10 ml-10'/>
              </div>
             
 
