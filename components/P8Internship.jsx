@@ -85,7 +85,7 @@ const P8Internship = () => {
                 transition={{ duration: 0.5 }}
               />
             </AnimatePresence> */}
-            <img src='/assets/P8Logo.png' alt='' />
+            <img src='/assets/P8Logo.png' alt='' className='md:w-[20%] w-[60%]' />
             </div>
         
 
@@ -104,6 +104,7 @@ const P8Internship = () => {
                 exit={{ opacity: 0 }}
                 alt=""
                 transition={{ duration: 0.05 }}
+                className='md:w-[100%] w-[80%]  ml-10' 
               />
             </AnimatePresence>
               </div>

@@ -19,9 +19,9 @@ const P1Zimoteam = () => {
     <div className='h-[100Vh] w-full flex flex-col overflow-x-hidden relative'>
         <div className='w-full h-[30%] flex flex-row justify-end items-start '>
             {/* <img src='/assets/P1Location.png' alt='' className='w-[40%] md:w-[20%] mr-10 mt-4'/> */}
-            <div className='w-[40%] md:w-[20%] mr-0 mt-3' > <ClockComponent /> </div>
+            <div className='w-[70%] md:w-[20%] mr-0 mt-3' > <ClockComponent /> </div>
         </div>
-        <img src='/assets/P1BackgroundLogo.png' alt='' className='absolute blur-md left-40 top-1/3' />
+        <img src='/assets/P1BackgroundLogo.png' alt='' className='absolute blur-sm md:blur-md md:left-40 left-20 top-72 md:top-1/3 md:w-[70%] w-[70%]' />
         <div className='w-full h-[40%] flex flex-col justify-center items-start ml-10'>
             <div>
                 <img src='/assets/P1ZimoTeam.png' alt='' className='md:w-[100%] w-[60%]' />
@@ -36,7 +36,7 @@ const P1Zimoteam = () => {
         </div>
 
         <div className='w-full h-[30%] flex flex-col justify-end items-center mb-4 '>
-            <div className='mb-12'><img src='/assets/P1BringingThe.png' alt='' /></div>
+            <div className='mb-12'><img src='/assets/P1BringingThe.png' alt='' className='w-[90%] md:w-[100%] ml-5' /></div>
             <a><img className="w-10 cursor-pointer hover:scale-100 animate-bounce hover:animate-ping transition-all py-1 " src="/assets/DownArrow.png" alt="arrow"  onClick={() => scrollToSection('page2')}/>
                         </a>
         </div>

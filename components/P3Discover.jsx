@@ -35,7 +35,7 @@ const P3Discover = () => {
 
 
         <div className='h-[25%] flex flex-col justify-end items-center '>
-            <div class="uppercase 3xl:text-[14px] text-[15px] tracking-[2px] text-white   mb-6">Services in over hundred and twenty countries.</div>
+            <div class="uppercase 3xl:text-[14px] text-[15px] tracking-[2px] text-white ml-10 md:ml-0   mb-6">Services in over hundred and twenty countries.</div>
             <div className='mt-4'> 
             <a><img className="w-10 cursor-pointer hover:scale-100 animate-bounce hover:animate-ping transition-all py-1 filter invert" src="/assets/DownArrow.png" alt="arrow" onClick={() => scrollToSection('page4')} />
                         </a>

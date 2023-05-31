@@ -29,7 +29,7 @@ const P4AI = () => {
                 <div className='w-[30%]'></div>
                 <div className='w-[40%] h-full flex flex-col justify-between items-center'> 
                 <div></div>
-                <div class="uppercase 3xl:text-[14px] text-[20px] tracking-[2px] text-[#737373] mb-8 md:mb-4">ARTIFICIAL INTELLIGENCE FOR EVERYONE</div>
+                <div class="uppercase 3xl:text-[14px] md:text-[20px] text-[15px] w-[300px] md:w-auto  tracking-[2px] text-[#737373] mb-8 md:mb-4">ARTIFICIAL INTELLIGENCE FOR EVERYONE</div>
                 <div>
                 <a><img className="w-10 cursor-pointer hover:scale-100 animate-bounce hover:animate-ping transition-all py-1 " src="/assets/DownArrow.png" alt="arrow" onClick={() => scrollToSection('page5')} />
                         </a>

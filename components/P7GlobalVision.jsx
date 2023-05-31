@@ -22,14 +22,14 @@ const P7GlobalVision = () => {
         
         <div className='h-[30%] w-full flex flex-row justify-center items-center'>
             <div>
-                <div class="tracking-[2px] text-center 3xl:text-[14px] md:text-[20px] text-[12px]  uppercase text-white"> WORK ON OUR INNOVATIVE SOFTWARE PRODUCTS.</div>
+                <div class="tracking-[2px] text-left 3xl:text-[14px] md:text-[20px] text-[12px] md:ml-20 ml-5 uppercase text-white"> WORK ON OUR INNOVATIVE SOFTWARE PRODUCTS.</div>
                 <div class="tracking-[2px] pt-8 3xl:text-[14px] text-[12px] md:text-[20px] uppercase pl-5 text-white">DESIGN AND BUILD THE SYSTEMS THAT ARE CHANGING THE WORLD.</div>
             </div>
         </div>
         
         
         <div className='h-[40%] w-full flex flex-row justify-center items-center'>
-        <img src='/assets/P7Logo.png' alt='' className=''/>
+        <img src='/assets/P7Logo.png' alt='' className='md:w-[20%] w-[40%]'/>
         </div>
         
         
